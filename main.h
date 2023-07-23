@@ -18,6 +18,7 @@
  */
 typedef struct buffer
 {
+<<<<<<< HEAD
   char *buf;
   char *tmpbuf;
   const char *format;
@@ -117,4 +118,25 @@ int num_len(int n);
 void get_sign(tags *t, int minus, char *front);
 char *check_prec(char *tmp_str, char *num_str, tags *t, int s_len);
 void _out_of_time(char *buf_str, char *tmp_str, char *front, tags *t);
+=======
+	char *q;
+	int (*u)(char *format, va_list);
+} structype;
+int _printf(const char *format, ...)
+int _putchar(char ch);
+int _puts(char *string);
+int printc(char *format, va_list);
+int printstr(char *format, va_list);
+int (*driver(char *format))(char *format, va_list);
+int _printf(char *format, ...);
+int printint(char *format, va_list pa);
+int integer(int number);
+int contadordigit(int number);
+int _abs(int number);
+int printpercent(char *format, va_list pa);
+int printhex(char *format, va_list);
+int printHEX(char *format, va_list);
+int printocta(char *format, va_list);
+int print_unsign(char *format, va_list);
+>>>>>>> 16b77d9e747c726cadd6b6f3ec56e4e3f576215f
 #endif
